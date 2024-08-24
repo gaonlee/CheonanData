@@ -14,11 +14,10 @@ express_df = pd.read_csv(f"{DATA_PATH}/농림축산식품부_반려동물 운송
 funeral_df = pd.read_csv(f"{DATA_PATH}/농림축산식품부_반려동물 장묘업 현황_12_30_2020.csv", encoding='cp949')
 exhibition_df = pd.read_csv(f"{DATA_PATH}/농림축산식품부_반려동물 전시업 현황_20221231.csv", encoding='cp949')
 
-# 한글 폰트 설정 (Windows 환경에서 맑은 고딕 사용)
-font_path = 'C:/Windows/Fonts/malgun.ttf'  # 맑은 고딕 폰트 경로
-font_name = fm.FontProperties(fname=font_path).get_name()
-plt.rc('font', family=font_name)  # 전역 폰트 설정
+# 한글 폰트 설정 (DejaVu Sans 사용)
+plt.rc('font', family='DejaVu Sans')  # 전역 폰트 설정
 plt.rcParams['axes.unicode_minus'] = False  # 마이너스 부호 깨짐 방지
+
 st.title("'행정구역별 반려동물 보유 가구 수 (가구원수=계)'")
 
 # '전국', '동부', '읍부', '면부', '서울특별시', '경기도'를 제외한 데이터 필터링
