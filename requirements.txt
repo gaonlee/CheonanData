@@ -1,1 +1,12 @@
+et-xmlfile==1.1.0 ; python_version >= "3.11" and python_version < "4.0"
+openpyxl==3.1.5 ; python_version >= "3.11" and python_version < "4.0"
 
+streamlit
+pandas
+matplotlib
+seaborn
+scikit-learn
+folium
+streamlit-folium
+openpyxl
+numpy
